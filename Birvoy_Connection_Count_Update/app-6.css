@@ -1,0 +1,5 @@
+
+img.mx{object-fit:contain}
+.mxhero{display:block;width:128px;height:auto;max-height:128px;margin:8px auto 4px}
+#s-reqsent .mxins{position:relative!important;left:auto!important;top:auto!important;align-self:center;width:118px;max-height:112px;margin:0 auto 10px;z-index:2}
+.ctr img.mx,.ctr2 img.mx,.rnone img.mx{width:132px;height:auto;max-height:132px}

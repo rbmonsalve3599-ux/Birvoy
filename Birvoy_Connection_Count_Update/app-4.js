@@ -1,0 +1,1 @@
+(function(){var a=document.querySelector("#rnav .bg"),b=document.querySelector("#cnav .bg");if(a&&b)b.src=a.src})();

@@ -1,0 +1,1 @@
+(function(){var a=document.querySelector("#s-activity .baview[data-s=empty] .ctr img"),b=document.getElementById("chemptyimg");if(a&&b)b.src=(window.FXBIRD&&window.FXBIRD.sn)||a.src})();

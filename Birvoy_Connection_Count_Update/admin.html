@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Birvoy · Admin</title>
+<link rel="stylesheet" href="/admin-1.css"></head><body>
+<section id="gate"><div class="gate-card"><div class="brand"><img src="/assets/e875c59ae56c769479126bde.png" alt=""><span>Birvoy</span><span class="tag">Admin</span></div>
+<div id="checking" class="loading" role="status">Checking your session…</div>
+<form id="login" hidden><p class="eyebrow">Administration</p><h1>Welcome back.</h1><p class="muted">Sign in with your Birvoy account to manage your community.</p><div id="loginError" class="error" role="alert" hidden></div><label for="email">Email address</label><input class="field" id="email" type="email" autocomplete="username" placeholder="you@example.com" required><label for="password">Password</label><input class="field" id="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button class="primary" id="signin" type="submit">Sign in to Admin</button><div style="text-align:center;margin-top:18px"><button class="textbutton" id="forgotPassword" type="button">Forgot password?</button></div><div class="gate-foot">For assigned administrators only.<br><strong>Create your account in Birvoy first.</strong></div></form>
+<div id="noaccess" hidden><div class="access-mark" data-icon="shield"></div><p class="eyebrow">Account verified</p><h1>Admin access needed.</h1><p class="muted">You’re signed in, but this account hasn’t been assigned admin access. Ask the project owner to approve your email address.</p><p class="account-email" id="deniedEmail"></p><div id="accessError" class="error" role="alert" hidden></div><div class="gate-buttons"><button class="secondary" id="deniedLogout">Sign out</button><button class="primary" id="checkAccess">Check access</button></div></div>
+</div></section>
+<div id="app" hidden><aside class="sidebar"><div class="brand"><img src="/assets/e875c59ae56c769479126bde.png" alt=""><span>Birvoy</span><span class="tag">Admin</span></div><div class="nav-caption">Workspace</div><nav class="nav" aria-label="Admin sections"><button data-tab="overview" aria-current="page"><span data-icon="grid"></span>Overview</button><button data-tab="listings"><span data-icon="bag"></span>Listings</button><button data-tab="users"><span data-icon="users"></span>Users</button><button data-tab="reports"><span data-icon="flag"></span>Reports<span class="number" id="reportBadge">—</span></button><button data-tab="audit"><span data-icon="clock"></span>Audit log</button></nav><div class="sidebar-foot"><b>Your community, cared for.</b>Manage responsibly.<br>Every moderation action is recorded.</div></aside><main class="main"><header class="topbar"><div class="crumb">Birvoy Admin <b>/ <span id="crumb">Overview</span></b></div><div class="session"><div class="avatar" id="avatar">B</div><div class="session-copy"><b>Administrator</b><span id="signedEmail"></span></div><button class="ghost" id="logout">Sign out</button></div></header><div class="content"><div class="pagehead"><div><h1 id="heading">Overview</h1><p id="subtitle">A clear view of your Birvoy community.</p></div><button class="secondary" id="refresh"><span data-icon="refresh"></span>Refresh</button></div><div id="pageError" class="error" role="alert" hidden></div><section class="metrics" aria-label="Community totals" id="metrics"></section><div id="view" aria-live="polite"></div><footer class="footer"><span><i class="connection-dot"></i><span id="connection">Connected to Birvoy</span></span><span id="updated">Waiting for data…</span></footer></div></main></div>
+<div id="modal" hidden><form class="modal" id="moderationForm" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><h2 id="modalTitle"></h2><p class="muted" id="modalDescription"></p><label for="reason">Reason</label><textarea class="field" id="reason" maxlength="1000" required placeholder="Briefly explain this decision."></textarea><p class="muted" style="font-size:11px;margin-top:8px">This reason is saved in the audit log.</p><div id="modalError" class="error" role="alert" hidden></div><div class="modal-footer"><button class="secondary" id="cancel" type="button">Cancel</button><button class="primary" id="confirm" type="submit">Confirm</button></div></form></div><div id="toast" role="status" hidden></div>
+<div id="recovery" style="position:fixed;inset:0;z-index:25;background:#013f6359;display:grid;place-items:center;padding:20px" hidden><div class="modal" role="dialog" aria-modal="true" aria-labelledby="recoveryTitle"><h2 id="recoveryTitle">Reset your password</h2><div id="recoveryError" class="error" role="alert" hidden></div>
+<form id="recover-email"><p class="muted">Request a fresh password-reset email for your Birvoy account.</p><label for="recoverEmail">Email address</label><input class="field" id="recoverEmail" type="email" autocomplete="username" required><div class="modal-footer"><button class="primary" type="submit">Send reset email</button></div></form>
+<form id="recover-verify" hidden><p class="muted">Check your inbox and spam folder. Copy the <strong>new password-reset link</strong> from the email and paste it below. If the email contains a code, you can enter that instead.</p><label for="recoverToken">Fresh reset link or email code</label><textarea class="field" id="recoverToken" rows="3" required autocomplete="off" spellcheck="false" placeholder="Paste the new reset link or code"></textarea><div class="modal-footer"><button class="secondary" type="button" id="requestAgain">Request another email</button><button class="primary" type="submit">Verify</button></div></form>
+<form id="recover-password" hidden><p class="muted">Choose the password you’ll use for Birvoy and Birvoy Admin.</p><label for="newPassword">New password</label><input class="field" id="newPassword" type="password" minlength="8" autocomplete="new-password" required><label for="confirmPassword">Confirm new password</label><input class="field" id="confirmPassword" type="password" minlength="8" autocomplete="new-password" required><div class="modal-footer"><button class="primary" type="submit">Save new password</button></div></form><button class="ghost" type="button" id="closeRecovery" style="display:block;margin:16px auto 0">Back to sign in</button></div></div>
+<script src="/admin-1.js" defer></script><script src="/admin-2.js" defer></script></body><!-- Bundled Supabase JS SDK 2.118.0 license:
+MIT License
+
+Copyright (c) 2020 Supabase
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-->
+</html>

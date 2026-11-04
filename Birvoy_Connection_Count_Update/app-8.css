@@ -1,0 +1,10 @@
+
+.offer-gallery{margin:8px 0 16px;width:100%;min-width:0}
+.offer-gallery-main{position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:#edf2f5}
+.offer-gallery-main>img{display:block;width:100%;height:100%;object-fit:contain}
+.offer-gallery-count{position:absolute;right:10px;bottom:10px;background:rgba(2,35,57,.8);color:white;border-radius:12px;padding:4px 9px;font:600 11px/16px Inter,sans-serif}
+.offer-gallery-thumbs{display:flex;gap:8px;overflow-x:auto;padding:8px 2px 3px;scroll-snap-type:x mandatory}
+.offer-gallery-thumbs>button{display:block;flex:0 0 72px;width:72px;height:58px;box-sizing:border-box;padding:2px;border:2px solid transparent;border-radius:10px;background:#edf2f5;cursor:pointer;scroll-snap-align:start}
+.offer-gallery-thumbs>button[aria-pressed="true"]{border-color:#013F63}
+.offer-gallery-thumbs>button:focus-visible{outline:2px solid #013F63;outline-offset:1px}
+.offer-gallery-thumbs img{display:block;width:100%;height:100%;border-radius:6px;object-fit:cover}

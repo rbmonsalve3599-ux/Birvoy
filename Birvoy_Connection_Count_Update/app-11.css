@@ -1,0 +1,244 @@
+
+:root{--app-font:"SF Pro Text","SF Pro Display","SF Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;--app-heading:"SF Pro Display","SF Pro Text",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+h1,h2,h3,.pgtitle{font-family:var(--app-heading)!important;letter-spacing:-.025em}
+button,input,textarea,select{font-family:var(--app-font)!important}
+img,svg{image-rendering:auto}
+button:focus-visible,[role="button"]:focus-visible{outline:2px solid #013F63;outline-offset:3px}
+.mys .hd>div{max-width:100%}
+.mys .hd h1,.mys .hd h2,.mys .hd h3,.mys .hd>div>*:first-child{white-space:normal;overflow-wrap:break-word;line-height:1.25}
+.mys .hd h2{font-size:20px}
+.mys .hd p{font-size:12px;line-height:1.5;margin-top:6px;color:#536777}
+.mys .card p,.mys .para{line-height:1.5}
+.mys .card .name{line-height:1.35}
+.mys .card .sub,.mys .card .small{line-height:1.45;color:#536777}
+.mys .flex>.grow{min-width:0}
+.mys .card:not(.oc):not(.bz){border-color:#d4e0e6}
+.fx .pgtitle{line-height:1.25}
+.fx .lbl{line-height:1.4}
+.fx .hintlbl,.fx .editnote,.fx .note,.fx .hint{line-height:1.5;color:#536777}
+.fx .in{line-height:1.5;border-color:#9aadb9}
+.fx .in::placeholder,.fx textarea::placeholder{color:#657784;opacity:1}
+.fx .livewrap h2{line-height:1.35;letter-spacing:-.025em}
+.fx .lcard{padding:16px;border-radius:16px}
+.fx .lcbtns{gap:10px}
+.fx .lcbtns .go{min-height:46px;line-height:1.35}
+#s-chats .chtabs{margin:16px 0 12px;padding:4px;gap:4px}
+#s-chats .chtabs button{min-height:38px;font-size:13px;line-height:1.3}
+#s-chats .chatrow{padding:14px 4px;gap:12px}
+#s-chats .chatrow .nm{font-size:14px;line-height:1.35}
+#s-chats .chatrow .last{font-size:13px;line-height:1.4;margin-top:4px}
+#s-chats .chatrow .time{color:#657784;line-height:1.4}
+#s-chats .chatrow .rctx{line-height:1.4;margin-top:3px}
+#askHint{color:#65717b}
+#askHint small{color:#65717b}
+.offer-gallery-thumbs>button[aria-pressed="true"]{outline:2px solid #013F63;outline-offset:2px}
+
+#tools{display:none!important}
+
+/* Readability and spacing for Birvoy's existing mobile layouts. */
+#s-results .rbd{padding:0 20px 20px}
+#s-results .rbd h2{font-size:21px;line-height:1.25;margin:4px 0 6px}
+#s-results .rbd .sb{font-size:13px;line-height:1.45;margin:0 0 16px;color:#536777}
+#s-results .rneed{padding:14px 16px;margin-bottom:14px}
+#s-results .rneed .l{font-size:11px;line-height:1.3}
+#s-results .rneed .t{font-size:15px;line-height:1.45;margin-top:5px}
+#s-results .rseg{gap:6px;margin-bottom:10px}
+#s-results .rseg button{height:40px;font-size:14px;line-height:1.25}
+#s-results .rcnt{font-size:12.5px;line-height:1.45;margin:12px 2px 10px}
+#s-results .mcard{padding:14px;margin-bottom:12px}
+#s-results .mcard .top{gap:12px;align-items:center}
+#s-results .mcard .nm{font-size:16px;line-height:1.3;overflow-wrap:anywhere}
+#s-results .mcard .tg{font-size:10.5px;line-height:1.35}
+#s-results .mcard .sb2{font-size:13px;line-height:1.4;margin-top:3px;overflow-wrap:anywhere}
+#s-results .mcard .bt{gap:8px;margin-top:14px}
+#s-results .mcard .bt button{height:auto;min-height:44px;padding:8px 12px;line-height:1.25;font-size:13px;white-space:normal}
+#s-results .mcard .bt button:not(.cn){flex:0 0 auto}
+#s-results .mcard .bt .cn{flex:1 1 0;min-width:100px;margin-left:0}
+#s-results .rnone{padding:18px 4px}
+#s-results .rnone h3{font-size:19px;line-height:1.3;margin:4px 0 8px}
+#s-results .rnone p{font-size:14px;line-height:1.55;margin:0 4px 18px}
+#s-results .rnone .pri{min-height:48px;height:auto;padding:12px 16px;line-height:1.35}
+#s-results .rnone .sec{min-height:44px;height:auto;padding:10px 12px;line-height:1.35}
+.mys .myview>.body{padding-left:20px;padding-right:20px}
+.mys .body .sec{margin:20px 0 10px;line-height:1.35}
+.mys .body .para,.mys .body>p{font-size:14px;line-height:1.55;overflow-wrap:anywhere}
+.mys .body .empty,.mys .body .note{font-size:13px;line-height:1.5}
+.mys .body .card{margin-bottom:12px}
+.mys .body .acts3{gap:10px;margin:14px 0}
+.mys .body .acts3 .cta{min-height:44px;height:auto;padding:10px 14px;line-height:1.3}
+.mys .body .acts3 .sq{flex:none;min-width:44px;min-height:44px}
+.mys .body .cta:not(.acts3 .cta){min-height:44px;height:auto;padding:10px 16px;line-height:1.3}
+.fx .body{padding-left:21px;padding-right:21px}
+.fx .pgtitle{line-height:1.25;overflow-wrap:anywhere}
+.fx .lbl{line-height:1.4;margin-bottom:6px}
+.fx .in{min-height:44px;line-height:1.4}
+.fx .hint,.fx .note,.fx .editnote{line-height:1.5}
+#s-chats .chatrow{gap:12px;padding:14px 4px}
+#s-chats .chatrow .grow{min-width:0}
+#s-chats .chatrow .nm,#s-chats .chatrow .last{overflow-wrap:anywhere}
+#bvsheet .bvcard{padding:24px 22px 28px}
+#bvsheet .bvcard h3{font-size:19px;line-height:1.3}
+#bvsheet .bvcard .sub{font-size:14px;line-height:1.5;margin:8px 2px 12px}
+#bvsheet .bvcard label{font-size:13px;line-height:1.4;margin:14px 2px 6px}
+#bvsheet .bvcard .bvin{min-height:46px}
+
+/* Keep the sent state visible and the three profile statistics balanced. */
+#s-results .mcard .bt .cn.dn,.mys .body .acts3 .cta.pend,#s-myodet .acts3 .cta.pend{background:#b6e9f4;color:#013f63;opacity:1;border:0}
+#s-mybview .stats,#s-mypview .stats{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+#s-mybview .stats>div,#s-mypview .stats>div{min-width:0;padding:9px 5px;overflow-wrap:anywhere}
+#s-mybview .stats span,#s-mypview .stats span{line-height:1.3}
+#s-chats .thsource{font-size:12px;line-height:1.3;margin-top:3px;opacity:.8;overflow-wrap:anywhere}
+
+/* Keep the chat tabs while removing redundant section headings. */
+#s-chats .chathdr[data-h="req"]{display:none!important}
+#s-chats .chpane[data-p="msg"] #chRecent{margin-top:14px}
+/* Keep the complete Golden Find image visible beside its details. */
+#stage #gf:not(.bv-gf-empty) .gf-photo{left:195px;top:12px;width:153px;height:78px;object-fit:cover;object-position:center;border-radius:6px}
+#stage #gf:not(.bv-gf-empty) .gfn,#stage #gf:not(.bv-gf-empty) .gfs{max-width:173px}
+#stage #gf:not(.bv-gf-empty) .gfd{z-index:2;left:auto;right:8px;top:5px}
+#stage #gf:not(.bv-gf-empty) .gfv{z-index:2}
+
+/* A light entrance for the need screen; the navigation remains fixed. */
+@keyframes birvoy-need-enter{
+  0%{opacity:.72;transform:translateY(5px)}
+  65%{opacity:1;transform:translateY(-1px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+@media (prefers-reduced-motion:no-preference){
+ #s-type.on #tc{animation:birvoy-need-enter .55s cubic-bezier(.22,.8,.3,1) both}
+}
+
+/* Show the complete listing image within the existing card and gallery frames. */
+.mys .oc img,
+.mys .gal img,
+.offer-gallery-thumbs img,
+#s-results .mcard .mav,
+#s-chats .sentcard .ph,
+.fx .rvpic img,
+.fx .photogrid img,
+.fx .livecard .photos img,
+.fx .livecard2 .photos img,
+.fx .livecard3 .photos img{
+  object-fit:contain;
+  object-position:center;
+  background:#eef5f8;
+}
+.mys .blogo,.mys .pav img,.mys .pbig,.fx .rvlogo,.fx .rvpro img{
+  object-fit:contain;
+  object-position:center;
+  background:#eef5f8;
+}
+.mys .bz .cover,#s-mybview .hero,#s-mypview .hero{
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color:#eaf3f8;
+}
+#stage #gf:not(.bv-gf-empty) .gf-photo{
+  object-fit:contain;
+  object-position:center;
+  background:#eaf3f8;
+}
+
+/* Preserve each listing photo's complete image, even in wide or small frames. */
+#stage .bvzero-feature > img,
+#stage #s-odet .od-hero img,
+#stage #s-results .mcard .mav,
+#stage #s-results .rneed img,
+#stage .mys .ogal img,
+#stage .mys .thumb img,
+#stage .mys .gal img,
+#stage .mys .oc img,
+#stage .mys .blogo,
+#stage .mys .pav img,
+#stage .mys .pbig,
+#stage .fx .logobox .up img,
+#stage .fx .upbox2 img,
+#stage .fx .upbox img,
+#stage .fx .photogrid img,
+#stage .fx .rvpic img,
+#stage .fx .rvlogo,
+#stage .fx .rvpro img,
+#stage .fx .lcph img,
+#stage .fx .lclogo,
+#stage .fx .logo64,
+#stage .fx .avatarbox,
+#stage .fx .av96,
+#stage .fx .photos img,
+#stage .offer-gallery-main > img,
+#stage .offer-gallery-thumbs img,
+#stage #offer-photo-viewer .pv-stage img,
+#stage #gf:not(.bv-gf-empty) .gf-photo{
+ object-fit:contain!important;object-position:center!important;background-color:#edf4f7;
+}
+#stage .mys .pav img,#stage .mys .pbig,#stage .fx .avatarbox,#stage .fx .av96,#stage #s-results .mcard .mav.rd{border-radius:8px}
+#stage #s-mybview .hero,#stage #s-mypview .hero,#stage .mys .bz .cover,#stage #bvPv .hero{background-size:contain!important;background-repeat:no-repeat;background-position:center;background-color:#edf4f7}
+/* Featured Businesses keeps its full-bleed banner photo. */
+#stage .bvzero-feature[data-kind="b"] > img{object-fit:cover!important;object-position:center!important}
+
+/* Keep gallery photos fully visible, with room for the photo counter. */
+#stage .offer-gallery-main{background:#eaf3f7}
+#stage .offer-gallery-main > img{
+ box-sizing:border-box;
+ padding:6px 6px 28px;
+ object-fit:contain!important;
+ object-position:center!important;
+ background-color:transparent;
+}
+#stage .offer-gallery-count{right:8px;bottom:5px}
+#stage .offer-gallery-thumbs{
+ scrollbar-width:none;
+ -ms-overflow-style:none;
+ scroll-padding-inline:2px;
+}
+#stage .offer-gallery-thumbs::-webkit-scrollbar{display:none}
+#stage .offer-gallery-thumbs > button{overflow:hidden}
+#stage .offer-gallery-thumbs img{
+ box-sizing:border-box;
+ padding:2px;
+ object-fit:contain!important;
+ object-position:center!important;
+ background:#eaf3f7;
+}
+
+/* Allow sideways swipes while keeping vertical scrolling and pinch zoom. */
+#stage .offer-gallery-main{touch-action:pan-y pinch-zoom}
+
+/* Golden Find: full-card image with a blue scrim for readable details. */
+#stage #gf:not(.bv-gf-empty) .gf-photo{
+ left:0;top:0;width:100%;height:100%;border-radius:0;
+ object-fit:cover!important;object-position:center!important;background:#013f63;z-index:0;
+}
+#stage #gf:not(.bv-gf-empty)::after{
+ content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+ background:linear-gradient(90deg,rgba(1,38,64,.94) 0%,rgba(1,48,77,.82) 42%,rgba(1,48,77,.38) 100%),linear-gradient(0deg,rgba(1,38,64,.65),transparent 70%);
+}
+#stage #gf:not(.bv-gf-empty) .gfl,
+#stage #gf:not(.bv-gf-empty) .gfd,
+#stage #gf:not(.bv-gf-empty) .gf-prices,
+#stage #gf:not(.bv-gf-empty) .gfn,
+#stage #gf:not(.bv-gf-empty) .gfs,
+#stage #gf:not(.bv-gf-empty) .gfv{z-index:2}
+#stage #gf:not(.bv-gf-empty) .gfn,
+#stage #gf:not(.bv-gf-empty) .gfs{max-width:245px}
+
+/* Align a standalone Share control on Community Need details. */
+#s-myndet .body .acts3{align-items:center;margin:10px 0 8px}
+#s-myndet .body .acts3 > .sq:only-child{margin-left:auto}
+#s-myndet .body .acts3 .sq svg{width:18px;height:18px}
+#s-myndet .body .acts3 + .sec{margin-top:8px!important}
+
+/* Connection requests and chats share one scrolling list. */
+#s-chats .chtabs{display:none!important}
+#s-chats .chview[data-s=list] .chpane:not([hidden]){display:block!important}
+#s-chats .chview[data-s=list] .chpane[hidden],#s-chats #chReqEmpty{display:none!important}
+
+#bvPv .pv-portrait{display:block;width:84px;height:84px;object-fit:contain;background:#eaf3f8;border-radius:16px;margin:0 0 14px}
+#bvPv .pv-gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 0 18px}
+#bvPv .pv-gallery img{flex:0 0 100%;width:100%;height:210px;object-fit:contain;background:#eaf3f8;border-radius:14px;scroll-snap-align:center}
+#bvPv h3{font-size:14px;color:#013f63;margin:18px 0 8px}
+#bvPv .pv-tags{display:flex;flex-wrap:wrap;gap:6px}
+#bvPv .pv-tags span{background:#e5f4f9;color:#013f63;padding:6px 10px;border-radius:14px;font-size:12px}
+#bvPv .pv-join{display:block;width:100%;height:46px;border:1px solid #013f63;border-radius:24px;background:#fff;color:#013f63;font-weight:700}
